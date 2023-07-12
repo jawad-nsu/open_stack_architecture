@@ -1,25 +1,23 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/ShaanCoding/ReadME-Generator">
+  <a href="https://github.com/jawad-nsu/open_stack_architecture">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">OpenStack Notes</h3>
 
   <p align="center">
-    Openstack Notes, resources, code
-    <br/>
-    Note This Project Is Still W.I.P
+    Openstack notes, resources, code
     <br/>
     <br/>
     <a href="https://readme.shaankhan.dev"><strong>View Demo »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/ShaanCoding/ReadME-Generator">Explore the docs</a>
+    <a href="https://github.com/jawad-nsu/open_stack_architecture">Explore the docs</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Report Bug</a>
+    <a href="https://github.com/jawad-nsu/open_stack_architecture/issues">Report Bug</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Request Feature</a>
+    <a href="https://github.com/jawad-nsu/open_stack_architecture/issues">Request Feature</a>
   </p>
 </p>
 
@@ -78,7 +76,7 @@ This program has no pre-requisites
 1. Clone the repo
 
 ```sh
-git clone https://github.com/ShaanCoding/ReadME-Generator.git
+git clone https://github.com/jawad-nsu/open_stack_architecture.git
 ```
 
 2. Open The index.HTML file
@@ -91,16 +89,16 @@ Coming Soon!
 
 ## Roadmap
 
-See the [open issues](https://github.com/ShaanCoding/ReadME-Generator/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/jawad-nsu/open_stack_architecture/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/ShaanCoding/ReadME-Generator/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/jawad-nsu/open_stack_architecture/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
 - Please make sure you check your spelling and grammar.
 - Create individual PR for each suggestion.
-- Please also read through the [Code Of Conduct](https://github.com/ShaanCoding/ReadME-Generator/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+- Please also read through the [Code Of Conduct](https://github.com/jawad-nsu/open_stack_architecture/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
@@ -112,7 +110,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MPL-2.0 License. See [LICENSE](https://github.com/ShaanCoding/ReadME-Generator/blob/main/LICENSE.md) for more information.
+Distributed under the MPL-2.0 License. See [LICENSE](https://github.com/jawad-nsu/open_stack_architecture/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
