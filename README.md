@@ -95,8 +95,7 @@ See the [open issues](https://github.com/jawad-nsu/open_stack_architecture/issue
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/jawad-nsu/open_stack_architecture/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
-- Please make sure you check your spelling and grammar.
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/jawad-nsu/open_stack_architecture/issues/new) to discuss it, or directly create a pull request after you edit the files with necessary changes.
 - Create individual PR for each suggestion.
 - Please also read through the [Code Of Conduct](https://github.com/jawad-nsu/open_stack_architecture/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
@@ -110,14 +109,12 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MPL-2.0 License. See [LICENSE](https://github.com/jawad-nsu/open_stack_architecture/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/jawad-nsu/open_stack_architecture/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
-- **Shaan Khan** - _Comp Sci Student_ - [Shaan Khan](https://github.com/ShaanCoding/) - _All Work_
+- **Jawad Rahim** - _Software Engineer_ - [Jawad Rahim](https://github.com/jawad-nsu) - _Built Terraform Template_
 
 ## Acknowledgements
 
-- [ShaanCoding](https://github.com/ShaanCoding/)
-- [Othneil Drew](https://github.com/othneildrew/Best-README-Template)
-- [ImgShields](https://shields.io/)
+- [Sanjeev-Thiyagarajan](https://github.com/Sanjeev-Thiyagarajan/Terraform-Crash-Course)
