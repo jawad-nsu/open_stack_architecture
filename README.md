@@ -4,10 +4,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">ReadME Generator</h3>
+  <h3 align="center">OpenStack Notes</h3>
 
   <p align="center">
-    Open stack Notes, resources, code
+    Openstack Notes, resources, code
     <br/>
     Note This Project Is Still W.I.P
     <br/>
