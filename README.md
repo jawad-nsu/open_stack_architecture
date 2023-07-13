@@ -53,7 +53,7 @@ OpenStack’s promise is not just powering private cloud, it’s also the buildi
 
 2. Glance:
 
-- Image management. Stores and retrieves virtual machine images. Open stack compute makes use of this during instance provisioning. When an VM starts, it must have a image behind it. We need to prebuild the images and load them into glance beforehand so that when the VM starts, it goes out to glance and pulls a copy of the image from there, instead of having to go through the whole installation process each time, it’s preinstalled and ready to go.
+- Image management. Stores and retrieves virtual machine images. Open stack compute makes use of this during instance provisioning. When an VM starts, it must have a image behind it. We need to prebuild the images and load them into Glance beforehand so that when the VM starts, it goes out to Glance and pulls a copy of the image from there, instead of having to go through the whole installation process each time, it’s preinstalled and ready to go.
 
 3. Neutron:
 
@@ -79,37 +79,9 @@ Once you’re authenticated, and have a image and a network available, Nova will
 
 - Based on project Horizon, which is more of a framework. Provides web based self-service portal to interact with underlying open stack services such as launching an instance, assigning IP addresses, configuring access controls and so on.
 
-## Built With
-
-Whilst I was the main developer of this project, this project couldn't of even started without the help of these open source projects, special thanks to:
-
-- [JavaScript](https://www.javascript.com/)
-- [VueJS](https://vuejs.org/)
-
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This program has no pre-requisites
-
-### Installation
-
-1. Clone the repo
-
-```sh
-git clone https://github.com/jawad-nsu/open_stack_architecture.git
-```
-
-2. Open The index.HTML file
-
-3. Have fun!
-
 ## Usage
 
-Coming Soon!
+Feel free to use this as a technical guide
 
 ## Roadmap
 
