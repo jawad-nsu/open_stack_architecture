@@ -43,17 +43,41 @@
 
 ![Architectural Diagram](images/openstack_diagram.png)
 
-There are many great ReadME templates available on GitHub, however, I struggled to find any ReadME generators. Throughout my open source project contributions, I've had to spend numerous hours editing README files which I could've spent developing instead. This paired with me often forgetting to change links, titles and sections made me look for a README generator.
+OpenStack’s promise is not just powering private cloud, it’s also the building platform for network functions virtualization transforming into an NFV
 
-Whilst alternative options existed, I struggled to find one that could suit my needs whilst being fast and easy to use, the ones I found were command-line based, only taking a limited input with the inability to go back on, as such I've built this, a README Generator!
+- Keystone:
 
-With this open-source project, I hope to allow you to save as much time as it saved me, the benefits of this project are huge and here's why:
+1. Identity provider service. Authentication and Authorization.
+   a. It provides auth not just to user but to different service component as well.
+2. Where all the services get registered to as the central registration point. It provides catalog to services and users so that they know how to reach open stack services.
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should element DRY principles to the rest of your life :smile:
+- Glance:
 
-Of course, no one template will serve all projects since your needs may be different. Whilst this template has served my needs, it may not serve yours so I'll be continuing to work on this to make a more "Universal" and "Flexible" ReadME Generator in the future. Feel free to suggest changes by opening a new issue, or if you want to implement your own, feel free to fork this repo and create a pull request.
+1. Image management. Stores and retrieves virtual machine images. Open stack compute makes use of this during instance provisioning. When an VM starts, it must have a image behind it. We need to prebuild the images and load them into glance beforehand so that when the VM starts, it goes out to glance and pulls a copy of the image from there, instead of having to go through the whole installation process each time, it’s preinstalled and ready to go.
+
+- Neutron:
+
+1. Open Stack networking and will create that virtual network and attach the VM to it.
+2. Enables network connectivity as a service for other open stack services, such as Open Stack Compute and has a pluggable architecture that supports many popular networking vendors and technologies. Very extensible
+
+Once you’re authenticated, and have a image and a network available, Nova will step in.
+
+- Nova:
+
+1. Nova manages the life cycle of compute instances in open, static environment. Some of it’s capabilities include launching, migrating, pausing, resizing and decommissioning of virtual machine on demand. Nova is the layer on top of the hypervisor and it’s the one that coordinates all that network, storage and compute resources we have in cloud. It coordinates them together. Talks with the hypervisor and makes sure that you’re machine are launched
+
+- Cinder:
+
+1. Volumn storage. Cinder provides persistant block storage to running instances. Normally, the virtual machines boot up with ephemeral volumes. That means when we terminate the VM, the data within the VM’s get lost. If you need to keep the data when it’s terminated, attach a persistent block device to those VM’s so that VM can write the information that needs to persist on that volume. When the VM’s get terminated, you’re able to reattach that block volume device to another instance. This provides the ability to continue using the information that you had in the terminated instance.
+2. This isn’t shared storage, it’s block storage, meaning there is a one-to-one relationship between the volume and the instance. There’s a separate shared storage project called **Manilla**. Which provides shared file system for VM’s
+
+- Swift:
+
+1. Object storage. Store and retrive simple objects like an `mpeg4` video file it uses an HTTP based API, where you pass objects and metadata with regular **HTTP** `GET` and `PUT` commands. Basic file storage but can be very powerful. Simple, Flexible, and Scalable.
+
+- Dashboard:
+
+1. Based on project Horizon, which is more of a framework. Provides web based self-service portal to interact with underlying open stack services such as launching an instance, assigning IP addresses, configuring access controls and so on.
 
 ## Built With
 
