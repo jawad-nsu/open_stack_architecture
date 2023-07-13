@@ -10,7 +10,7 @@
     Openstack notes, resources, code
     <br/>
     <br/>
-    <a href="https://readme.shaankhan.dev"><strong>View Demo »</strong></a>
+    <a href="https://github.com/jawad-nsu/open_stack_architecture"><strong>View Demo »</strong></a>
     <br/>
     <br/>
     <a href="https://github.com/jawad-nsu/open_stack_architecture">Explore the docs</a>
@@ -41,7 +41,7 @@
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Architectural Diagram](images/openstack_diagram.png)
 
 There are many great ReadME templates available on GitHub, however, I struggled to find any ReadME generators. Throughout my open source project contributions, I've had to spend numerous hours editing README files which I could've spent developing instead. This paired with me often forgetting to change links, titles and sections made me look for a README generator.
 
@@ -113,8 +113,8 @@ Distributed under the MIT License. See [LICENSE](https://github.com/jawad-nsu/op
 
 ## Authors
 
-- **Jawad Rahim** - _Software Engineer_ - [Jawad Rahim](https://github.com/jawad-nsu) - _Built Terraform Template_
+- **Jawad Rahim** - _Software Engineer_ - [Jawad Rahim](https://github.com/jawad-nsu) - _Open Stack notes_
 
 ## Acknowledgements
 
-- [Sanjeev-Thiyagarajan](https://github.com/Sanjeev-Thiyagarajan/Terraform-Crash-Course)
+- [Ugur Oktay](https://github.com/uguroktay)
