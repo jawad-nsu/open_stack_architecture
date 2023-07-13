@@ -45,39 +45,39 @@
 
 OpenStack’s promise is not just powering private cloud, it’s also the building platform for network functions virtualization transforming into an NFV
 
-- Keystone:
+1. Keystone:
 
-1. Identity provider service. Authentication and Authorization.
-   a. It provides auth not just to user but to different service component as well.
-2. Where all the services get registered to as the central registration point. It provides catalog to services and users so that they know how to reach open stack services.
+- Identity provider service. Authentication and Authorization.
+  - It provides auth not just to user but to different service component as well.
+- Where all the services get registered to as the central registration point. It provides catalog to services and users so that they know how to reach open stack services.
 
-- Glance:
+2. Glance:
 
-1. Image management. Stores and retrieves virtual machine images. Open stack compute makes use of this during instance provisioning. When an VM starts, it must have a image behind it. We need to prebuild the images and load them into glance beforehand so that when the VM starts, it goes out to glance and pulls a copy of the image from there, instead of having to go through the whole installation process each time, it’s preinstalled and ready to go.
+- Image management. Stores and retrieves virtual machine images. Open stack compute makes use of this during instance provisioning. When an VM starts, it must have a image behind it. We need to prebuild the images and load them into glance beforehand so that when the VM starts, it goes out to glance and pulls a copy of the image from there, instead of having to go through the whole installation process each time, it’s preinstalled and ready to go.
 
-- Neutron:
+3. Neutron:
 
-1. Open Stack networking and will create that virtual network and attach the VM to it.
-2. Enables network connectivity as a service for other open stack services, such as Open Stack Compute and has a pluggable architecture that supports many popular networking vendors and technologies. Very extensible
+- Open Stack networking and will create that virtual network and attach the VM to it.
+- Enables network connectivity as a service for other open stack services, such as Open Stack Compute and has a pluggable architecture that supports many popular networking vendors and technologies. Very extensible
 
 Once you’re authenticated, and have a image and a network available, Nova will step in.
 
-- Nova:
+4. Nova:
 
-1. Nova manages the life cycle of compute instances in open, static environment. Some of it’s capabilities include launching, migrating, pausing, resizing and decommissioning of virtual machine on demand. Nova is the layer on top of the hypervisor and it’s the one that coordinates all that network, storage and compute resources we have in cloud. It coordinates them together. Talks with the hypervisor and makes sure that you’re machine are launched
+- Nova manages the life cycle of compute instances in open, static environment. Some of it’s capabilities include launching, migrating, pausing, resizing and decommissioning of virtual machine on demand. Nova is the layer on top of the hypervisor and it’s the one that coordinates all that network, storage and compute resources we have in cloud. It coordinates them together. Talks with the hypervisor and makes sure that you’re machine are launched
 
-- Cinder:
+5. Cinder:
 
-1. Volumn storage. Cinder provides persistant block storage to running instances. Normally, the virtual machines boot up with ephemeral volumes. That means when we terminate the VM, the data within the VM’s get lost. If you need to keep the data when it’s terminated, attach a persistent block device to those VM’s so that VM can write the information that needs to persist on that volume. When the VM’s get terminated, you’re able to reattach that block volume device to another instance. This provides the ability to continue using the information that you had in the terminated instance.
-2. This isn’t shared storage, it’s block storage, meaning there is a one-to-one relationship between the volume and the instance. There’s a separate shared storage project called **Manilla**. Which provides shared file system for VM’s
+- Volumn storage. Cinder provides persistant block storage to running instances. Normally, the virtual machines boot up with ephemeral volumes. That means when we terminate the VM, the data within the VM’s get lost. If you need to keep the data when it’s terminated, attach a persistent block device to those VM’s so that VM can write the information that needs to persist on that volume. When the VM’s get terminated, you’re able to reattach that block volume device to another instance. This provides the ability to continue using the information that you had in the terminated instance.
+- This isn’t shared storage, it’s block storage, meaning there is a one-to-one relationship between the volume and the instance. There’s a separate shared storage project called **Manilla**. Which provides shared file system for VM’s
 
-- Swift:
+6. Swift:
 
-1. Object storage. Store and retrive simple objects like an `mpeg4` video file it uses an HTTP based API, where you pass objects and metadata with regular **HTTP** `GET` and `PUT` commands. Basic file storage but can be very powerful. Simple, Flexible, and Scalable.
+- Object storage. Store and retrive simple objects like an `mpeg4` video file it uses an HTTP based API, where you pass objects and metadata with regular **HTTP** `GET` and `PUT` commands. Basic file storage but can be very powerful. Simple, Flexible, and Scalable.
 
-- Dashboard:
+7. Dashboard:
 
-1. Based on project Horizon, which is more of a framework. Provides web based self-service portal to interact with underlying open stack services such as launching an instance, assigning IP addresses, configuring access controls and so on.
+- Based on project Horizon, which is more of a framework. Provides web based self-service portal to interact with underlying open stack services such as launching an instance, assigning IP addresses, configuring access controls and so on.
 
 ## Built With
 
